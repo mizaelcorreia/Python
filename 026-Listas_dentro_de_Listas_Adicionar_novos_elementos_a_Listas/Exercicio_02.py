@@ -17,9 +17,9 @@ for i in range(1, 5):
         PAR.append(num)
     else:
         IMPAR.append(num)
+    print(NUMERO)
 
-print("Pares: ", PAR)
-print("Impares: ", IMPAR)
+
 
 print("Numeros: ", NUMERO)
 print("Pares: ", PAR)
