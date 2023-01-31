@@ -15,5 +15,5 @@ for i in range(testes):
     if porta != premio:
         trocar += 1
 
-print("É vantajoso trocar em %.3g%% das vezes"%(trocar*100/testes))
-print("Não é vantajoso trocar em %.3g%% das vezes"%((1 - trocar/testes)*100))
+print("É vantajoso trocar em %.33g%% das vezes"%(trocar*100/testes))
+print("Não é vantajoso trocar em %.33g%% das vezes"%((1 - trocar/testes)*100))
