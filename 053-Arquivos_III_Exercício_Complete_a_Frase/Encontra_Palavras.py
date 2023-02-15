@@ -12,7 +12,7 @@ def GeraDicionário():
     
     for palavra in arquivo:
         separado = palavra.split('\n')
-        print(separado[0])
+        #print(separado[0])
         dicionário.append(separado[0])
 
     #dicionário.sort()
