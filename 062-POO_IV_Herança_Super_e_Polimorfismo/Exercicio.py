@@ -37,7 +37,7 @@ class Triangulo(ObjetoGrafico):
         self.altura = altura
 
     def area(self):
-        return self.base*self.altura
+        return (self.base*self.altura)/2
 
     def perimetro(self):
         #ops! falha minha
