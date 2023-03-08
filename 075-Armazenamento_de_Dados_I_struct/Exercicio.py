@@ -37,16 +37,16 @@ def carregaListaDeCadastros(): # Definicão da função que não recebe nenhum a
         try:
             #Primeiro dado --> numero de chars do nome
             for num_char_nome in arq: # Percorre cada linha do arquivo 
-                num_char_nome = num_char_nome.split(b'\n')[0] # Pega a primeira informaçao da linha que é o nome
+                num_char_nome = num_char_nome.split(b'\n')[0] # Que informação é essa?
 
 
                 #Segundo dado --> nome
                 #Terceiro dado --> R.G.
                 #Quarto dado --> C.P.F
-                decode = '%is Q Q'%struct.unpack('I', num_char_nome)[0] # Desenpacota num_char_nome no tipo inteiro e atribui a variavel decode a string 
+                decode = '%is Q Q'%struct.unpack('I', num_char_nome)[0] # Tipo e nome da variavel 
                 
-                data = arq.readline().split(b'\n')[0] # Pega a primeira informaçao da linha que é o nome
-                info = struct.unpack(decode, data) 
+                data = arq.readline().split(b'\n')[0]
+                info = struct.unpack(decode, data)
 
                 pessoas[info[0].decode()] = {'R.G.' : info[1], 'C.P.F.': info[2]}
 
@@ -186,6 +186,7 @@ def salvaPessoas(pessoas):
 
             arq.write(info_data)
             arq.write(b'\n')
+
 
 if __name__ == '__main__':
     main()
