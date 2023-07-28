@@ -8,7 +8,7 @@ import struct #Importando o modulo struct
 
 def main(): # Declarando a função main
     pessoas = carregaListaDeCadastros() # Chamando a função e atribuindo o retorno a uma variavel
-    print(pessoas)
+    
     while True:
         cmd = recebeComando()
 
@@ -38,7 +38,7 @@ def carregaListaDeCadastros(): # Definicão da função que não recebe nenhum a
             #Primeiro dado --> numero de chars do nome
             for num_char_nome in arq: # Percorre cada linha do arquivo 
                 num_char_nome = num_char_nome.split(b'\n')[0] # Que informação é essa?
-
+                print(num_char_nome)
 
                 #Segundo dado --> nome
                 #Terceiro dado --> R.G.
