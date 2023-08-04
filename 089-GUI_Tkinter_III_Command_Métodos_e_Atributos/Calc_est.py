@@ -1,7 +1,7 @@
 from tkinter import *
 
 def Calcular():
-    resultado['text'] = form.get()
+    resultado['text'] = form.get() # O metodo get do tkinter pega a informação digitado no campo
     resultado['fg'] = 'green'
 
 #Cria a nossa tela
